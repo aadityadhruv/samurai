@@ -1,0 +1,122 @@
+[
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "c++ -Isamurai.p -I. -I.. -Iinclude -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c++14 -O0 -g -MD -MQ samurai.p/src_main.cpp.o -MF samurai.p/src_main.cpp.o.d -o samurai.p/src_main.cpp.o -c ../src/main.cpp",
+    "file": "../src/main.cpp",
+    "output": "samurai.p/src_main.cpp.o"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "c++ -Isamurai.p -I. -I.. -Iinclude -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c++14 -O0 -g -MD -MQ samurai.p/src_cpu_cpu.cpp.o -MF samurai.p/src_cpu_cpu.cpp.o.d -o samurai.p/src_cpu_cpu.cpp.o -c ../src/cpu/cpu.cpp",
+    "file": "../src/cpu/cpu.cpp",
+    "output": "samurai.p/src_cpu_cpu.cpp.o"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "c++  -o samurai samurai.p/src_main.cpp.o samurai.p/src_cpu_cpu.cpp.o -Wl,--as-needed -Wl,--no-undefined",
+    "file": "samurai.p/src_main.cpp.o",
+    "output": "samurai"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-internal__test",
+    "output": "test"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson test --no-rebuild --print-errorlogs",
+    "file": "all",
+    "output": "meson-internal__test"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-internal__benchmark",
+    "output": "benchmark"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson test --benchmark --logbase benchmarklog --num-processes=1 --no-rebuild",
+    "file": "all",
+    "output": "meson-internal__benchmark"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-internal__install",
+    "output": "install"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson install --no-rebuild",
+    "file": "PHONY",
+    "output": "meson-internal__install"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-internal__dist",
+    "output": "dist"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson dist",
+    "file": "PHONY",
+    "output": "meson-internal__dist"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-internal__ctags",
+    "output": "ctags"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson --internal tags ctags /home/aaditya/Repos/samurai",
+    "file": "PHONY",
+    "output": "meson-internal__ctags"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-internal__uninstall",
+    "output": "uninstall"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson --internal uninstall",
+    "file": "PHONY",
+    "output": "meson-internal__uninstall"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-test-prereq",
+    "output": "all"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "",
+    "file": "meson-internal__clean",
+    "output": "clean"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/ninja -t clean",
+    "file": "PHONY",
+    "output": "meson-internal__clean"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson --internal regenerate /home/aaditya/Repos/samurai .",
+    "file": "../meson.build",
+    "output": "build.ninja"
+  },
+  {
+    "directory": "/home/aaditya/Repos/samurai/build",
+    "command": "/usr/bin/meson --internal regenerate /home/aaditya/Repos/samurai .",
+    "file": "PHONY",
+    "output": "reconfigure"
+  }
+]
